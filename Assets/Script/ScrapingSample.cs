@@ -24,7 +24,7 @@ public class ScrapingSample : MonoBehaviour
 
         //参考　http://angelpinpoint.seesaa.net/article/462279383.html
         var elem = doc.QuerySelectorAll(".ProfileNav-value")[2];
-        Debug.Log(elem.InnerHtml.Replace(",", ""));
+        Debug.Log("フォロワー数"+elem.InnerHtml.Replace(",", ""));
     }
 
     async UniTask<IHtmlDocument> Parce()
